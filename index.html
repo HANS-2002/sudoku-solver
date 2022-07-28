@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sudoku Solver</title>
+    <link rel="icon" href="./sudokuImg.png" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="board">
+        <div class="row">
+          <input type="text" maxlength="1" id="0" class="cell" />
+          <input type="text" maxlength="1" id="1" class="cell" />
+          <input type="text" maxlength="1" id="2" class="cell" />
+          <input type="text" maxlength="1" id="3" class="cell" />
+          <input type="text" maxlength="1" id="4" class="cell" />
+          <input type="text" maxlength="1" id="5" class="cell" />
+          <input type="text" maxlength="1" id="6" class="cell" />
+          <input type="text" maxlength="1" id="7" class="cell" />
+          <input type="text" maxlength="1" id="8" class="cell" />
+        </div>
+        <div class="row">
+          <input type="text" maxlength="1" id="9" class="cell" />
+          <input type="text" maxlength="1" id="10" class="cell" />
+          <input type="text" maxlength="1" id="11" class="cell" />
+          <input type="text" maxlength="1" id="12" class="cell" />
+          <input type="text" maxlength="1" id="13" class="cell" />
+          <input type="text" maxlength="1" id="14" class="cell" />
+          <input type="text" maxlength="1" id="15" class="cell" />
+          <input type="text" maxlength="1" id="16" class="cell" />
+          <input type="text" maxlength="1" id="17" class="cell" />
+        </div>
+        <div class="row">
+          <input type="text" maxlength="1" id="18" class="cell" />
+          <input type="text" maxlength="1" id="19" class="cell" />
+          <input type="text" maxlength="1" id="20" class="cell" />
+          <input type="text" maxlength="1" id="21" class="cell" />
+          <input type="text" maxlength="1" id="22" class="cell" />
+          <input type="text" maxlength="1" id="23" class="cell" />
+          <input type="text" maxlength="1" id="24" class="cell" />
+          <input type="text" maxlength="1" id="25" class="cell" />
+          <input type="text" maxlength="1" id="26" class="cell" />
+        </div>
+        <div class="row">
+          <input type="text" maxlength="1" id="27" class="cell" />
+          <input type="text" maxlength="1" id="28" class="cell" />
+          <input type="text" maxlength="1" id="29" class="cell" />
+          <input type="text" maxlength="1" id="30" class="cell" />
+          <input type="text" maxlength="1" id="31" class="cell" />
+          <input type="text" maxlength="1" id="32" class="cell" />
+          <input type="text" maxlength="1" id="33" class="cell" />
+          <input type="text" maxlength="1" id="34" class="cell" />
+          <input type="text" maxlength="1" id="35" class="cell" />
+        </div>
+        <div class="row">
+          <input type="text" maxlength="1" id="36" class="cell" />
+          <input type="text" maxlength="1" id="37" class="cell" />
+          <input type="text" maxlength="1" id="38" class="cell" />
+          <input type="text" maxlength="1" id="39" class="cell" />
+          <input type="text" maxlength="1" id="40" class="cell" />
+          <input type="text" maxlength="1" id="41" class="cell" />
+          <input type="text" maxlength="1" id="42" class="cell" />
+          <input type="text" maxlength="1" id="43" class="cell" />
+          <input type="text" maxlength="1" id="44" class="cell" />
+        </div>
+        <div class="row">
+          <input type="text" maxlength="1" id="45" class="cell" />
+          <input type="text" maxlength="1" id="46" class="cell" />
+          <input type="text" maxlength="1" id="47" class="cell" />
+          <input type="text" maxlength="1" id="48" class="cell" />
+          <input type="text" maxlength="1" id="49" class="cell" />
+          <input type="text" maxlength="1" id="50" class="cell" />
+          <input type="text" maxlength="1" id="51" class="cell" />
+          <input type="text" maxlength="1" id="52" class="cell" />
+          <input type="text" maxlength="1" id="53" class="cell" />
+        </div>
+        <div class="row">
+          <input type="text" maxlength="1" id="54" class="cell" />
+          <input type="text" maxlength="1" id="55" class="cell" />
+          <input type="text" maxlength="1" id="56" class="cell" />
+          <input type="text" maxlength="1" id="57" class="cell" />
+          <input type="text" maxlength="1" id="58" class="cell" />
+          <input type="text" maxlength="1" id="59" class="cell" />
+          <input type="text" maxlength="1" id="60" class="cell" />
+          <input type="text" maxlength="1" id="61" class="cell" />
+          <input type="text" maxlength="1" id="62" class="cell" />
+        </div>
+        <div class="row">
+          <input type="text" maxlength="1" id="63" class="cell" />
+          <input type="text" maxlength="1" id="64" class="cell" />
+          <input type="text" maxlength="1" id="65" class="cell" />
+          <input type="text" maxlength="1" id="66" class="cell" />
+          <input type="text" maxlength="1" id="67" class="cell" />
+          <input type="text" maxlength="1" id="68" class="cell" />
+          <input type="text" maxlength="1" id="69" class="cell" />
+          <input type="text" maxlength="1" id="70" class="cell" />
+          <input type="text" maxlength="1" id="71" class="cell" />
+        </div>
+        <div class="row">
+          <input type="text" maxlength="1" id="72" class="cell" />
+          <input type="text" maxlength="1" id="73" class="cell" />
+          <input type="text" maxlength="1" id="74" class="cell" />
+          <input type="text" maxlength="1" id="75" class="cell" />
+          <input type="text" maxlength="1" id="76" class="cell" />
+          <input type="text" maxlength="1" id="77" class="cell" />
+          <input type="text" maxlength="1" id="78" class="cell" />
+          <input type="text" maxlength="1" id="79" class="cell" />
+          <input type="text" maxlength="1" id="80" class="cell" />
+        </div>
+      </div>
+      <div class="controls">
+        <input
+          type="button"
+          value="Solve"
+          class="btn"
+          onclick="solveSudoku()"
+        />
+        <input type="button" value="Reset" class="btn" onclick="resetBoard()" />
+      </div>
+    </main>
+    <footer>
+      <p>
+        &copy; Sudoku Solver made by
+        <a href="https://github.com/HANS-2002" target="_blank">
+          Hans Pattnaik
+        </a>
+      </p>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
