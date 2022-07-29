@@ -42,7 +42,7 @@ function solve_sudoku() {
     return true; // if there is no empty cell return true
 }
 
-function checkIfAllUnfilled(){
+function checkIfAllUnfilled() {
     var count = 0;
     for (var i = 0; i < 9; i++)
         for (var j = 0; j < 9; j++)
@@ -51,7 +51,7 @@ function checkIfAllUnfilled(){
 }
 
 function solveSudoku() {
-    if(checkIfAllUnfilled())
+    if (checkIfAllUnfilled())
         return;
     solve_sudoku();
     printBoard();
@@ -98,19 +98,21 @@ function printBoard() {
 
 for (var i = 0; i < cells.length; i++) {
     cells[i].addEventListener('keyup', function (e) {
-        // console.log(e);
         var x = parseInt(this.id.substring(1));
         currRow = Math.floor(x / 9);
         currCol = x % 9;
-        if (e.key >= '1' && e.key <= '9') {
+        if (e.key >= '1' && e.key <= '9' && isvalid(parseInt(e.key), currRow, currCol)) {
             this.value = e.key;
             board[Math.floor(x / 9)][x % 9] = parseInt(e.key);
         }
-        else if (e.key == 'Backspace') {
+        else if (e.key == 'Backspace' ||
+            (e.key != 'ArrowLeft' &&
+                e.key != 'ArrowRight' &&
+                e.key != 'ArrowUp' &&
+                e.key != 'ArrowDown')) {
             this.value = '';
             board[Math.floor(x / 9)][x % 9] = -1;
         }
-        // console.log(board);
     });
 };
 
