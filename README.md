@@ -1,10 +1,10 @@
 # sudoku-solver
 
-A sudoku game built with the help of HTML ,CSS and javaScript
+A sudoku game built with the help of HTML, CSS and javaScript
 
-### contibute :
+### contribute :
 
-feel free to contibute to the porject 
+Feel free to contibute to the project 
 
-fork the repo and and start developing !!!
+Fork the repo and and start developing !!!
 
