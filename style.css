@@ -38,7 +38,7 @@ main .cell{
     outline: none;
     caret-color: transparent;
     border: 1px black solid;
-    border-radius: 25%;
+    border-radius: 20%;
 }
 
 #c2, #c11, #c20, #c29, #c38, #c47, #c56, #c65, #c74,
