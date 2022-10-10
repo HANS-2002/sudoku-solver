@@ -1,6 +1,6 @@
 # sudoku-solver
 
-A sudoku game built with the help of HTML, CSS and javaScript
+A sudoku game built with the help of HTML, CSS and javaScript. You can try it yourself <a href='https://sudoku.hanspattnaik.in/'>here</a>
 
 ### contribute :
 
